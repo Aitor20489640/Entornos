@@ -16,9 +16,11 @@ public class Temperatura {
         Scanner entry = new Scanner(System.in);
         float temperatura,mayor = 0,menor = 50;
         int max;
+        
         System.out.println("Bienvenida");
         System.out.println("Dame el numero de municipios a poner la temperatura.");
         max=entry.nextInt();
+        
         for (int i = 1; i <= max; i++) {
             System.out.println("Dame una temperatura");
             temperatura = entry.nextInt();
