@@ -23,7 +23,7 @@ public class Temperatura {
         
         for (int i = 1; i <= max; i++) {
             System.out.println("Dame una temperatura");
-            temperatura = entry.nextInt();
+            temperatura = entry.nextFloat();
             if (temperatura > 0) {
                 System.out.println(temperatura + "ºC es una temperatura positiva.");
             } else if (temperatura < 0) {
