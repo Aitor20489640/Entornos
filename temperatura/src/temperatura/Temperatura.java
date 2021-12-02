@@ -4,6 +4,8 @@
  */
 package temperatura;
 
+import java.util.Scanner;
+
 /**
  *
  * @author aitor
@@ -11,7 +13,20 @@ package temperatura;
 public class Temperatura {
 
     public static void main(String[] args) {
+        Scanner entry = new Scanner(System.in);
+        int temperatura;
         System.out.println("Bienvenida");
+        System.out.println("Dame una temperatura");
+        temperatura = entry.nextInt();
+        if (temperatura > 0){
+            System.out.println(temperatura+"ºC es una temperatura positiva.");
+        }
+        else if (temperatura < 0){
+            System.out.println(temperatura+"ºC es una temperatura negativa.");
+        }
+        else {
+            System.out.println(temperatura+"ºC es temperatura neutra.");
+        }
     }
     
 }
