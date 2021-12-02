@@ -14,7 +14,7 @@ public class Temperatura {
 
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
-        float temperatura,mayor = 0,menor = 50;
+        float temperatura, mayor = 0, menor = 0;
         int max;
         
         System.out.println("Bienvenida");
@@ -31,11 +31,19 @@ public class Temperatura {
             } else {
                 System.out.println(temperatura + "ºC es temperatura neutra.");
             }
-            if (temperatura > mayor){
+            if (i == 1){
                 mayor = temperatura;
-            } else if (temperatura < menor) {
                 menor = temperatura;
             }
+            else{
+                if (temperatura > mayor){
+                    mayor = temperatura;
+                } else {
+                    menor = temperatura;
+            }
+                
+            }
+            
             
         } System.out.println(mayor+"ºC es la mayor temperatura introducida y "+menor+"ºC es la menor temperatura introducida.");
 
