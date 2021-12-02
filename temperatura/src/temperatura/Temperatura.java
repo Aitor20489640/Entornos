@@ -14,10 +14,11 @@ public class Temperatura {
 
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
-        int temperatura;
+        int temperatura,max;
         System.out.println("Bienvenida");
-
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Dame el numero de municipios a poner la temperatura.");
+        max=entry.nextInt();
+        for (int i = 1; i <= max; i++) {
             System.out.println("Dame una temperatura");
             temperatura = entry.nextInt();
             if (temperatura > 0) {
