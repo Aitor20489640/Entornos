@@ -18,7 +18,7 @@ public class Temperatura {
         int max;
         
         System.out.println("Bienvenida");
-        System.out.println("Dame el numero de municipios a poner la temperatura.");
+        System.out.println("Dame el número de municipios para introducir su temperatura.");
         max=entry.nextInt();
         
         for (int i = 1; i <= max; i++) {
