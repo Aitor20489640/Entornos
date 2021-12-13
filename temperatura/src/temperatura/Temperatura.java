@@ -38,7 +38,8 @@ public class Temperatura {
             else{
                 if (temperatura > mayor){
                     mayor = temperatura;
-                } else {
+                } 
+                if (temperatura < menor) {
                     menor = temperatura;
             }
                 
