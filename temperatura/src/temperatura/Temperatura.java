@@ -5,7 +5,7 @@
 package temperatura;
 
 import java.util.Scanner;
-
+//Todo bien
 /**
  *
  * @author aitor
