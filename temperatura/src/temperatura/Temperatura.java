@@ -14,39 +14,51 @@ public class Temperatura {
 
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
-        float temperatura, mayor = 0, menor = 0;
-        int max;
+        float mayor = 0, menor = 0;
+        int max, i = 0;
+        float temperatura[];
         
         System.out.println("Bienvenida");
         System.out.println("Dame el número de municipios para introducir su temperatura.");
         max=entry.nextInt();
+        temperatura = new float[max];
         
-        for (int i = 1; i <= max; i++) {
+        for (i = 0; i < temperatura.length; i++) {
             System.out.println("Dame una temperatura");
-            temperatura = entry.nextFloat();
-            if (temperatura > 0) {
-                System.out.println(temperatura + "ºC es una temperatura positiva.");
-            } else if (temperatura < 0) {
-                System.out.println(temperatura + "ºC es una temperatura negativa.");
+            temperatura[i] = entry.nextFloat(); 
+            }
+        
+        for (i = 0; i < temperatura.length; i++) {
+            if (temperatura[i] > 0) {
+                System.out.println(temperatura[i] + "ºC es una temperatura positiva.");
+            } else if (temperatura[i] < 0) {
+                System.out.println(temperatura[i] + "ºC es una temperatura negativa.");
             } else {
-                System.out.println(temperatura + "ºC es temperatura neutra.");
+                System.out.println(temperatura[i] + "ºC es temperatura neutra.");
             }
             if (i == 1){
-                mayor = temperatura;
-                menor = temperatura;
+                mayor = temperatura[i];
+                menor = temperatura[i];
             }
             else{
-                if (temperatura > mayor){
-                    mayor = temperatura;
+                if (temperatura[i] > mayor){
+                    mayor = temperatura[i];
                 } 
-                if (temperatura < menor) {
-                    menor = temperatura;
+                if (temperatura[i] < menor) {
+                    menor = temperatura[i];
             }
-                
-            }
+        }
             
             
-        } System.out.println(mayor+"ºC es la mayor temperatura introducida y "+menor+"ºC es la menor temperatura introducida.");
+        } 
+        System.out.print("Las temperaturas almacenadas son: ");
+        
+        for (i = 0; i < temperatura.length; i++) {
+            System.out.print(temperatura[i]+" ");
+        }
+        System.out.println("");
+        
+        System.out.println(mayor+"ºC es la mayor temperatura introducida y "+menor+"ºC es la menor temperatura introducida.");
 
     }
 
