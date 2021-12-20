@@ -52,6 +52,8 @@ public class Temperatura {
         }
         System.out.println("");
         //Exposicion de los valores de los arrays
+        mayor = temperatura[0];
+        menor = temperatura[0];
 
         for (i = 0; i < temperatura.length; i++) {
             if (temperatura[i] > 0) {
@@ -60,11 +62,7 @@ public class Temperatura {
                 System.out.println("La temperatura de " + nombres[i] + " es: " + temperatura[i] + "ºC es una temperatura negativa.");
             } else {
                 System.out.println("La temperatura de " + nombres[i] + " es: " + temperatura[i] + "ºC es temperatura neutra.");
-            }
-            if (i == 0) {
-                mayor = temperatura[i];
-                menor = temperatura[i];
-            } else {
+
                 if (temperatura[i] > mayor) {
                     mayor = temperatura[i];
                     placemayor = i;
