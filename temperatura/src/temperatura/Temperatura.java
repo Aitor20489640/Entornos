@@ -10,6 +10,7 @@ import java.util.Scanner;
 /**
  *
  * @author aitor
+ * @version 1.0
  */
 public class Temperatura {
 
