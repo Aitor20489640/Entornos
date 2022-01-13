@@ -11,8 +11,14 @@ import java.util.Scanner;
  *
  * @author aitor
  * @version 1.0
+ * Programa para recopilar informacion de la temperatura de las ciudades
  */
 public class Temperatura {
+    
+    /**
+     * Esta es la funcion principal
+     * @param args Argumentos de entrada de linea de comandos
+     */
 
     public static void main(String[] args) {
         Scanner entry = new Scanner(System.in);
