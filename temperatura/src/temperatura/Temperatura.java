@@ -8,10 +8,9 @@ import java.util.Scanner;
 //Todo bien,todo correcto y yo que me alegro.
 
 /**
- *
+ *Programa para recopilar informacion de la temperatura de las ciudades.
  * @author aitor
- * @version 1.0 Programa para recopilar informacion de la temperatura de las
- * ciudades
+ * @version 1.0 
  */
 public class Temperatura {
 
