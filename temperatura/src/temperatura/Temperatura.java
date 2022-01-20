@@ -35,13 +35,7 @@ public class Temperatura {
         nombres = new String[max];
         //Instanciacion de los arrays.
 
-        for (i = 0; i < temperatura.length; i++) {
-            System.out.print("Dame una temperatura: ");
-            temperatura[i] = entry.nextFloat();
-            System.out.print("Dime su nombre: ");
-            entry.nextLine();
-            nombres[i] = entry.nextLine();
-        }
+        inputTempName(temperatura, nombres);
         //Introduccion de los valores en los arrays
 
         System.out.print("Las temperaturas almacenadas son: ");
@@ -84,6 +78,24 @@ public class Temperatura {
 
         System.out.println("La temperatura mayor es: " + mayor + "ºC y es de: " + nombres[placemayor] + ", la temperatura menor es: " + menor + "ºC y es de: " + nombres[placemenor] + ".");
         //Se muestra cual es la mayor y menor con los nombres de los municipios.
+    }
+    
+    /**
+     * 
+     * @param t
+     * @param n 
+     */
+    
+    public static void inputTempName(float[] t,String[] n){
+        Scanner sc = new Scanner(System.in);
+        
+        for (int i = 0; i < t.length; i++) {
+            System.out.print("Dame una temperatura: ");
+            t[i] = sc.nextFloat();
+            System.out.print("Dime su nombre: ");
+            sc.nextLine();
+            n[i] = sc.nextLine();
+        }
     }
 
 }
