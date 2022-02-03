@@ -11,7 +11,7 @@ package prueba1;
 public class Prueba1 {
 
     /**
-     * Metodo principal del programa.
+     * Método principal del programa.
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -19,10 +19,10 @@ public class Prueba1 {
     }
     
     /**
-     * Metodo para hacer una multiplicacion.
-     * @param a Primer valor para la multiplicacion
-     * @param b Segundo valor para la multiplicacion
-     * @return Devuelve el resultado de la multiplicacion.
+     * Método para hacer una multiplicación.
+     * @param a Primer valor para la multiplicación
+     * @param b Segundo valor para la multiplicación
+     * @return Devuelve el resultado de la multiplicación.
      */
     
     public static int mutiplica(int a, int b){
@@ -30,8 +30,8 @@ public class Prueba1 {
     }
     
     /**
-     * Metodo para hacer el factorial de un numero.
-     * @param a El numero al cual se le calcula el factorial
+     * Metodo para hacer el factorial de un número.
+     * @param a El número al cual se le calcula el factorial
      * @return Devuelve el resultado del factorial
      */
     
